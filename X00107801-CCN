@@ -1,0 +1,89 @@
+Cyclomatic complexity lab Quality assurance testing Flite yr2 Paul kelly
+
+[yed diagram](https://github.com/X00107801/X00107801-CCN.bmp) can be viewed here
+
+CC(G) = Number(edges)-Number(nodes) + 2
+CC(G) = number of nodes with a condition + 1
+CC(G) = number of regions + 1
+
+which going by the created diagram works out as
+
+CC(G) = 21 - 17 + 2 = 6
+CC(G) = 5 + 1       = 6    =  6 test paths minimum
+CC(G) = 5 + 1       = 6
+
+Test path 1  is   1, 5, 6, 17
+Test path 2  is   1, 5, 7, 8, 17 
+Test path 3  is   1, 5, 7, 9, 10, 11, 12, 17
+Test path 4  is   1, 5, 7, 9, 10, 11, 13, 14, 17
+Test path 5  is   1, 5, 7, 9, 10, 11, 13, 15, 16, 17
+Test path 6  is   1, 5, 7, 9, 10, 11, 13, 15, 17
+
+Test cases for each of the test paths
+
+# Test case 1                                                 # Test case 1a
+-------------                                                 --------------
+# inputs                                                      # inputs
+2 numbers not between 0 and 100                               2 numbers between 0 and 100
+# expected outputs                                            # expected outputs
+invalid input message printed out to screen                   program to continue on to next if else statement  
+# actual output                                               # actual output
+invalid input message was printed to screen                   program continued on to next stage 
+
+# Test case 2                                                 # Test case 2a
+-------------                                                 -------------- 
+# inputs                                                      # inputs
+exam number < 40  or ca. number < 40                          exam number > 40 or ca. > 40
+# expected outputs                                            # expected outputs
+Component fail message printed out to screen                  program continues to next stage  
+# actual output                                               # actual output
+Component fail message was printed to screen                  program continued to next stage    
+
+
+# Test case 3                                                 # Test case 3a
+-------------                                                 ---------------
+# inputs                                                      # inputs 
+commbined exam and ca. score < 60                             combined exam and ca. score > 60
+# expected outputs                                            # expected outputs
+fail message printed out to screen                            progression to check next condition
+# actual output                                               # actual output
+fail message was printed to screen                            program progressed
+
+
+# Test case 4                                                 # Test case 4a
+-------------                                                 --------------
+# inputs                                                      # inputs
+combined score > 60 and < 80                                  combined score not > 60 and < 80
+# expected outputs                                            # expected outputs
+pass message printed to screen                                progression to check next condition
+# actual output                                               # actual output
+pass message was printed to screen                            program progressed
+
+
+# Test case 5                                                 
+-------------
+# inputs
+combined > 80 and combined < 100
+# expected outputs
+passed with distinction message printed out to screen
+# actual output
+pass with distinction message was printed to screen
+
+
+# Test case 6
+-------------
+# inputs
+combination of characters and symbols and no variables entered
+# expected outputs
+invalid input message printed out to screen
+# actual output
+invalid input message was printed to screen
+
+
+
+
+
+
+
+
+
