@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.it-tallaght.ie/" />
+<title>X00107801-testcase3-ittdublin</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">X00107801-testcase3-ittdublin</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Full Time Courses</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Full Time Courses</td>
+	<td>Full Time Courses</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=hdInThisSection</td>
+	<td>In This Section</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'News')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=About Us</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=pageTitle</td>
+	<td>About ITT Dublin</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.copy &gt; h2</td>
+	<td>The Institute will:</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Research &amp; Innovation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='content']/div[3]/p[2]</td>
+	<td>The Institute has developed a portfolio of prioritised research areas with an applied or translational focus, with an appropriate level of underlying fundamental research. This approach is continued under the Institute’s Strategy for Research and Innovation 2008 – 2012. The identification, protection and exploitation of intellectual property arising from this research are also key activities under the strategy, as is further development of the Institute’s enterprise development activities.</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
